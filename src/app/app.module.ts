@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { DataserviceService} from './DataserviceService';
+import { DataserviceService} from './dataservice.service';
 
 @NgModule({
   declarations: [
