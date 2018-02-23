@@ -1,11 +1,84 @@
 <div class="container">
-  <div class="jumbotron">
-    <h1>{{title}}</h1>
-  </div>
+  <h2>{{title}}</h2>
   <div class="panel panel-primary">
     <div class="panel-heading">Status</div>
     <div class="panel-body">
-      
+      <table class="table">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Val 1</th>
+          <th>val 2</th>
+          <th>val 3</th>
+        </tr>
+        <tr *ngFor="let item of items; let i = index">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.val1}}</td>
+            <td>{{item.val2}}</td>
+            <td>{{item.val3}}</td>
+          </tr>
+      </table>
     </div>
   </div>
+</div>
+<!-- <ul>
+    <li >
+      {{i}} {{item.name}}
+    </li>
+  </ul> -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Status</div>
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Val 1</th>
+              <th>val 2</th>
+              <th>val 3</th>
+            </tr>
+            <tr *ngFor="let item of items; let i = index">
+              <td>{{item.id}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.val1}}</td>
+              <td>{{item.val2}}</td>
+              <td>{{item.val3}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Status</div>
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <th>ID</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            <tr *ngFor="let item of AllStatusData; let i = index">
+                <td>{{item.id}}</td>
+                <td>{{item.status}}</td>
+                <td>{{item.records}}</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Status</div>
+          <div class="panel-body">
+            
+          </div>
+        </div>
+      </div>
+  </div>
+
 </div>
